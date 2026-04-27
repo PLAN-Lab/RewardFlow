@@ -15,9 +15,8 @@
 
 This repository contains RewardFlow code and scripts for:
 - running single-image inference (`test_rewardflow.py`)
-- generating batch edited images (`pie_solver.py`)
-- computing evaluation metrics (`eval.py`)
-- All code tested on A100 80GB, There is SDP-Numel error with Ada and Litz architechures
+- All code tested on A100 80GB, There is SDP-Numel error with Ada and Litz architechures.
+- If Memory issue arrive only those reward functions will loaded which can be fit in the memory.
 
 ## Repository Layout
 
