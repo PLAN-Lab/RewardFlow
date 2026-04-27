@@ -1,18 +1,15 @@
-# RewardFlow: Generate Images by Optimizing What You Reward
+# $\color{orange}{\textbf{{[CVPR 2026]}}}$ RewardFlow: Generate Images by Optimizing What You Reward
 
-Accepted at **CVPR 2026**.
+<div align="center">
+  <a href="https://plan-lab.github.io/rewardflow"><img src="https://img.shields.io/badge/Project-Website-blue?style=for-the-badge&logo=googlechrome"></a>
+  <a href="https://arxiv.org/abs/2604.08536"><img src="https://img.shields.io/badge/arXiv-2604.08536-b31b1b.svg?style=for-the-badge"></a>
+  <a href="https://github.com/PLAN-Lab/RewardFlow"><img src="https://img.shields.io/badge/Code-GitHub-black?style=for-the-badge&logo=github"></a>
+  <a href="https://huggingface.co/onkarsus13/RewardFlow"><img src="https://img.shields.io/badge/Model-HuggingFace-orange?style=for-the-badge&logo=huggingface"></a>
+</div>
 
-## Teaser
+<p style="text-align: justify;">RewardFlow is an inversion-free framework that steers pretrained diffusion and flow-matching models at inference time using multi-reward Langevin dynamics. It combines differentiable rewards for semantic alignment, perceptual fidelity, localized grounding, object consistency, and human preference. A prompt-aware adaptive policy modulates reward weights and sampling steps, while a clean-latent KL regularizer preserves the original latent structure. Across editing and compositional generation benchmarks, RewardFlow achieves state-of-the-art zero-shot fidelity and alignment without fine-tuning.</p>
 
 [![RewardFlow Teaser](docs/teaser.jpg)](docs/CVPR2_abs_diagram_8_compressed.pdf)
-
-
-
-## Hugging Face Model
-
-[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-RewardFlow-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/onkarsus13/RewardFlow)
-
-- https://huggingface.co/onkarsus13/RewardFlow
 
 ## Overview
 
@@ -86,9 +83,11 @@ python test_rewardflow.py
 
 ## Contact
 
-Please contact to ```onkarsus13@gmail.com``` if you have any doubts regarding the running the code.
+Please contact to ```onkarsus13@gmail.com``` if you have face any challenges regarding the running the code.
 
 ## Citation
+
+:star: If you find this work useful, please cite our [paper](https://arxiv.org/abs/2604.08536)
 
 ```bibtex
 @inproceedings{rewardflow2026,
