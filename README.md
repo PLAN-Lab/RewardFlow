@@ -16,7 +16,7 @@
 This repository contains RewardFlow code and scripts for:
 - running single-image inference (`test_rewardflow.py`)
 - All code tested on A100 80GB, There is SDP-Numel error with Ada and Litz architechures.
-- If Memory issue arrive only those reward functions will loaded which can be fit in the memory.
+- Dynamic execution available: only reward functions that fit to memory are loaded to avoid OOM issues
 
 ## Repository Layout
 
