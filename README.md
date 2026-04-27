@@ -7,13 +7,15 @@
   <a href="https://huggingface.co/PLAN-Lab/RewardFlow"><img src="https://img.shields.io/badge/Model-HuggingFace-orange?style=for-the-badge&logo=huggingface"></a>
 </div>
 
-<p style="text-align: justify;">RewardFlow is an inversion-free framework that steers pretrained diffusion and flow-matching models at inference time using multi-reward Langevin dynamics. It combines differentiable rewards for semantic alignment, perceptual fidelity, localized grounding, object consistency, and human preference. A prompt-aware adaptive policy modulates reward weights and sampling steps, while a clean-latent KL regularizer preserves the original latent structure. Across editing and compositional generation benchmarks, RewardFlow achieves state-of-the-art zero-shot fidelity and alignment without fine-tuning.</p>
+<p style="text-align: justify;">RewardFlow is an inversion-free framework that steers pretrained diffusion and flow-matching models at inference time using multi-reward Langevin dynamics. It combines differentiable rewards for semantic alignment, perceptual fidelity, localized grounding, object consistency, and human preference. RewardFlow achieves state-of-the-art zero-shot fidelity and alignment without fine-tuning.</p>
 
 [![RewardFlow Teaser](docs/teaser.jpg)](docs/CVPR2_abs_diagram_8_compressed.pdf)
 
 ## Overview
 
 This repository contains RewardFlow code and scripts for:
+- Code runs smoothly for single image
+- Rewardflow is meant for the Faithfull generation of the images, Any Image generator model has the probabilitic inductive bais to metigate this issue with bring the multireward alliginment between text and image. It might reduce the FiD a bit but prompt aware conistancy is at best.
 - running single-image inference (`test_rewardflow.py`)
 - All code tested on A100 80GB, There is SDP-Numel error with Ada and Litz architechures.
 - Dynamic execution available: only reward functions that fit to memory are loaded to avoid OOM issues
