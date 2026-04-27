@@ -86,7 +86,7 @@ python test_rewardflow.py
 
 ## Contact
 
-Please contact to ```onkarks2@illinois.edu``` if you have any doubts regarding the running the code.
+Please contact to ```onkarsus13@gmail.com``` if you have any doubts regarding the running the code.
 
 ## Citation
 
